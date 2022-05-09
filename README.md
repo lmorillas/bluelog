@@ -12,25 +12,21 @@ Demo: http://bluelog.helloflask.com
 
 clone:
 ```
-$ git clone https://github.com/greyli/bluelog.git
+$ git clone https://github.com/lmorillas/bluelog.git
 $ cd bluelog
 ```
 create & activate virtual env then install dependency:
 
-with venv/virtualenv + pip:
+with venv + pip:
 ```
-$ python -m venv env  # use `virtualenv env` for Python2, use `python3 ...` for Python3 on Linux & macOS
-$ source env/bin/activate  # use `env\Scripts\activate` on Windows
+$ python3 -m venv env  # create env
+$ source env/bin/activate  
 $ pip install -r requirements.txt
 ```
-or with Pipenv:
+
+## Run
+
 ```
-$ pipenv install --dev
-$ pipenv shell
-```
-generate fake data then run:
-```
-$ flask forge
 $ flask run
 * Running on http://127.0.0.1:5000/
 ```
